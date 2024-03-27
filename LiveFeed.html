@@ -1,0 +1,59 @@
+<!-- Dazarus Chapman -->
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+        <head>
+          <!-- Character set and viewport settings -->
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <!-- Link to external CSS file -->
+          <link rel="stylesheet" href="Nike.css">
+
+           <!-- Asynchronous script inclusion for better page loading performance -->
+          <script defer src="script.js"></script>
+
+          <!-- Title of the webpage -->
+          <title>Functional Navigation</title>
+        </head>
+        <!-- Body of the HTML document -->
+        <body>
+          <nav>
+            <ul>
+                <li class="logo">Hexapod</li>
+                <li><a style="text-decoration: none; color: inherit;" href="./Index.html">Home</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="./LiveFeed.html">LiveFeed</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="./LiDAR.html">LiDAR</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="./Learn.html">Learn</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="./GetInTouch.html">Get In Touch</a></li>
+            </ul>
+        </nav>
+
+          <!-- Container for the livestream iframe -->
+          <div class="livestream-container">
+
+            <!-- Livestream iframe with specified attributes -->
+            <iframe id="webcam" width="720" height="650" src="https://youtube.com/embed/FQOlwFe5Y1E?feature=share?autoplay=1" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+            <!-- Main container for additional content -->
+            <div id="container">
+
+            <!-- Container for LiDAR readings, will be dynamically updated by JavaScript -->  
+
+            <div class="lidar-readings" id="lidarReadings">
+
+                <!-- LiDAR readings will be dynamically added here using JavaScript -->
+            </div>
+            </div>
+          </section>
+
+        <!-- Closing body tag -->  
+        <footer>
+          <img class="footer-image" src="LearnPhotos/UTSA-Engineering.jpg" alt="UTSA Logo">
+          <p>&copy; 2023 Tech for Kids</p>
+        </footer>
+        </body>
+        
+    <!-- Closing HTML tag -->    
+</html>

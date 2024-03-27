@@ -1,0 +1,61 @@
+<!-- Dazarus Chapman -->
+<!DOCTYPE html>
+<html>
+    <!-- Head section containing metadata and external resources -->
+    <html lang="en">
+        <head>
+           <!-- Character set and viewport settings -->
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+          <!-- Link to external CSS file -->
+          <link rel="stylesheet" href="Nike.css">
+
+          <!-- External script for jQuery library -->
+          <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+          <!-- Asynchronous script inclusion for better page loading performance -->
+          <script defer src="script.js"></script>
+
+          <!-- Title of the webpage -->
+          <title>Functional Navigation</title>
+        </head>
+        <!-- Body of the HTML document -->
+        <body>
+            <!-- Main container for content -->
+            <div id="container"> </div>
+              <!-- Container for LiDAR readings, will be dynamically updated by JavaScript -->
+            <div class="lidar-readings" id="lidarReadings">
+                <!-- LiDAR readings will be dynamically added here using JavaScript -->
+            </div>
+
+        <!-- Closing div tag for the container -->
+      <nav>
+        <ul>
+          <li class="logo">Hexapod</li>
+            <li><a style="text-decoration: none; color: inherit;" href="./Index.html">Home</a></li>
+            <li><a style="text-decoration: none; color: inherit;" href="./LiveFeed.html">LiveFeed</a></li>
+            <li><a style="text-decoration: none; color: inherit;" href="./LiDAR.html">LiDAR</a></li>
+            <li><a style="text-decoration: none; color: inherit;" href="./Learn.html">Learn</a></li>
+            <li><a style="text-decoration: none; color: inherit;" href="./GetInTouch.html">Get In Touch</a></li>
+        </ul>  
+      </nav>    
+      <section id="lidar">
+        <h2>LiDAR</h2>
+        <p>LiDAR stands for Light Detection and Ranging. It's a remote sensing technology that uses laser light to measure distances and create 3D maps of the environment. LiDAR is used in self-driving cars, drones, and other applications that require detailed spatial information.</p>
+        <div class="interactive-container">
+            <canvas id="lidar-canvas"></canvas>
+        </div>
+
+      </section> 
+        
+          
+        <!-- Closing body tag -->
+        <footer>
+          <img class="footer-image" src="LearnPhotos/UTSA-Engineering.jpg" alt="UTSA Logo">
+          <p>&copy; 2023 Tech for Kids</p>
+        </footer>
+        </body>
+        
+    <!-- Closing HTML tag -->
+</html>
