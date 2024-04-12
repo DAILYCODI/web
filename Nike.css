@@ -70,6 +70,7 @@ nav ul li a:hover {
     padding: 20px; /* Adjust as needed */
     background-color: #f0f0f0; /* Just for visualization */
   }
-    .footer-image
+    .footer-image {
     width: 100px; /* Adjust width as needed */
     height: auto; /* This maintains aspect ratio */
+    }
