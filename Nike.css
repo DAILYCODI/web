@@ -64,14 +64,9 @@ nav ul li a:hover {
     line-height: 1.6;
     margin-bottom: 0px;
     }
-    .footer-images {
-        display: flex; /* Use flexbox layout */
-        justify-content: flex-start; /* Align items from start (left) */
-        align-items: center; /* Align items vertically in the center */
-      }
-      
-      .footer-image {
-        width: 100px; /* Adjust the width as needed */
-        height: auto; /* Maintain aspect ratio */
-        margin-right: 10px; /* Add spacing between logos */
-      }
+    .footer {
+    display: flex;
+    justify-content: space-between; /* This will evenly distribute the logos */
+    padding: 20px; /* Adjust as needed */
+    background-color: #f0f0f0; /* Just for visualization */
+  }
