@@ -65,10 +65,9 @@ nav ul li a:hover {
     margin-bottom: 0px;
     }
     .footer {
-    display: flex;
+    display: relative;
     justify-content: space-between; /* This will evenly distribute the logos */
     padding: 20px; /* Adjust as needed */
-    background-color: #f0f0f0; /* Just for visualization */
   }
     .footer-image {
     width: 100px; /* Adjust width as needed */
