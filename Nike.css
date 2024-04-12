@@ -63,6 +63,11 @@ nav ul li a:hover {
     width: 100px; /* Adjust width as needed */
     height: auto; /* This maintains aspect ratio */
     }
+    .livestream-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
     .twitch-chat {
         width: calc(50% - 10px); /* Half the width of the container minus padding */
     }
