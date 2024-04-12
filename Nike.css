@@ -65,7 +65,7 @@ nav ul li a:hover {
     margin-bottom: 0px;
     }
     .footer {
-    display: relative;
+    display: flex;
     justify-content: space-between; /* This will evenly distribute the logos */
     padding: 20px; /* Adjust as needed */
   }
