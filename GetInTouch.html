@@ -4,170 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="sty.css">
 
-    <style>
-        /* CSS Styles */
-        html, body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #7a7979;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: fill;
-            text-align: center;
-        }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            margin-top: 0;
-            font-size: 2.5em;
-        }
-
-        h2 {
-            color: #333;
-            font-size: 1.5em;
-            margin-top: 20px;
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 25px;
-        }                       
-
-        .highlight {
-            color: #ff6600;
-            font-weight: bold;
-        }
-
-        .team-member {
-            margin-left: 20px;
-            list-style-type: none;
-        }
-
-        .team-member img {
-            border-radius: 50%;
-            border: 5px solid #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .team-member img:hover {
-            transform: scale(1.1);
-        }
-
-
-        .navigation a:hover {
-            background-color: #555;
-        }
-
-        nav {
-            background-color: #111;
-            color: #fff;
-            padding: 15px 20px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: space-between;
-        }
-        nav ul li {
-            margin-right: 20px;
-        }
-        nav ul li:last-child {
-            margin-right: 0;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 18px;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #ff8c00;
-        }
-        logo {
-            font-family: Arial, sans-serif; /* Choose appropriate font family */
-            font-size: 24px; /* Adjust font size as needed */
-            font-weight: bold; /* Ensure the logo stands out */
-            color: #333; /* Choose appropriate color */
-            padding: 10px 20px; /* Adjust padding for spacing */
-            text-transform: uppercase; /* Convert text to uppercase */
-            cursor: pointer; /* Provide pointer cursor for better UX */
-            /* Add any additional styling here */
-        }
-        .footer {
-        display: flex;
-        justify-content: space-between; /* This will evenly distribute the logos */
-        padding: 20px; /* Adjust as needed */
-      }
-        .footer-image {
-        width: 100px; /* Adjust width as needed */
-        height: auto; /* This maintains aspect ratio */
-        }
-
-        /* Add more styles as needed */
-    </style>
 </head>
 <body>
-    <header>
+    <header> 
+        <h1> Hexamech Solutions </h1>
+    </header>
         <nav>
         <ul>
-            <li class="logo">Hexapod</li>
-            <li><a style="text-decoration: none; color: inherit;" href="./LiveFeed.html">LiveFeed</a></li>
-            <li><a style="text-decoration: none; color: inherit;" href="./LiDAR.html">LiDAR</a></li>
-            <li><a style="text-decoration: none; color: inherit;" href="./index.html">Learn</a></li>
-            <li><a style="text-decoration: none; color: inherit;" href="./GetInTouch.html">Get In Touch</a></li>
-
-        </ul>
+            <ul>
+                <li><a style="text-decoration: none; color: inherit;" href="./hexapodrobot.html">Hexapod Robot</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="./LiveFeed.html">Livestreams</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="./LiDAR.html">LiDAR</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="./Learn.html">Learn</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="./index.html">Home</a></li>
+            </ul>  
     </nav>
-    </header>
-    <div class="container">
-        <h2>Our Story</h2>
-        <p>At the University of Texas at San Antonio (UTSA), a dedicated team of students embarked on a student-led project to build a Hexapod robot while delving into the realms of robotics and artificial intelligence. Through tireless effort and collaboration, they learned the intricacies of mechanical design, electronics, and programming, pushing the boundaries of their knowledge. Despite facing challenges and setbacks, their perseverance paid off as they successfully brought their Hexapod to life, equipped with autonomous capabilities and guided by algorithms they developed.</p>
-        <h2>Our Mission</h2>
-        <p>By embracing teamwork, perseverance, and a spirit of exploration, we aim to make a positive impact on our campus community and beyond. Additionally, we are committed to educating and inspiring young minds by sharing our knowledge and experiences, with our Hexapod project serving as a platform to teach students about engineering principles and ignite their curiosity in STEM fields.</p>
-        <h2>Our Team</h2>
-        <div class="team-members">
-            <div class="team-member">
-                <img src="TeamPhotos/KammerPic.png" alt="Johnathen Kammer">
-                <p><span class="highlight">Johnathen Kammer</span> - Project Manager / Hardware Engineer / System Engineer</p>
-            </div>
-            <div class="team-member">
-                <img src="TeamPhotos/TrevinoPIc.png" alt="Ezequiel Trevino">
-                <p><span class="highlight">Ezequiel Trevino</span> - Project Support Specialist / Software Engineer</p>
-            </div>
-            <div class="team-member">
-                <img src="TeamPhotos/CantuPic.png" alt="Derek Cantu">
-                <p><span class="highlight">Derek Cantu</span> - Financial Officer / Software Engineer</p>
-            </div>
-            <div class="team-member">
-                <img src="TeamPhotos/ChapmanPic.png" alt="Dazarus Chapman">
-                <p><span class="highlight">Dazarus Chapman</span> - Project Liaison / Software Engineer </p>
+    
+    <div class="story-section">
+        <div class="story-image">
+            <img src="./LearnPhotos/StoryStock.jpg" alt="Background Image">
+        </div>
+        <div class="Story">
+            <div class="ourstory">
+                <h2>
+     
+                    <span> Our Story <br> to build a better tomorrow <br>  through innovative technology.  </span>
+                 
+                </h2>
+                
+                <p>At the University of Texas at San Antonio (UTSA), a dedicated team of students embarked on a student-led project to build a Hexapod robot while delving into the realms of robotics and artificial intelligence. Through tireless effort and collaboration, they learned the intricacies of mechanical design, electronics, and programming, pushing the boundaries of their knowledge. Despite facing challenges and setbacks, their perseverance paid off as they successfully brought their Hexapod to life, equipped with autonomous capabilities and guided by algorithms they developed.</p>
+                
             </div>
         </div>
     </div>
-
-    <footer>
-        <div class="footer-images">
-          <img class="footer-image" src="./LearnPhotos/Hexamech Logo.png" alt="Hexamech Logo">
-          <img class="footer-image" src="./LearnPhotos/ECE Logo.png" alt="ECE">
-          <img class="footer-image" src="./LearnPhotos/KlesseEng Logo.png" alt="KlesseEng">
+    
+    <section class="team-container1">
+        <div class="team-left">
+            <!-- Image or box on the left -->
+            <img src="TeamPhotos/KammerPic.png" alt="Johnathen Kammer">
+            <p><span class="highlight">Johnathen Kammer</span> - Project Manager / Hardware Engineer / System Engineer</p>
         </div>
-      </footer>
+        <div class="team-right">
+            <!-- Words on the right -->
+            <h1> The innovative vision </h1>
+            <p> This image representated our original concept design of the Hexapdo Robot having 6 leg with a total of 18 servos</p>
+        </div>
+      </section>
+
+    <section class="team-container2">
+        <div class="team-left">
+            <!-- Words on the left -->
+            ffffffffffffffffffffffffffffff
+
+        </div>
+        <div class="team-right">
+            <!-- Images or boxes on the right -->
+            <img src="TeamPhotos/TrevinoPIc.png" alt="Ezequiel Trevino">
+            <p><span class="highlight">Ezequiel Trevino</span> - Project Support Specialist / Software Engineer</p>
+            
+        </div>
+    </section>
+    
+    <section class="team-container3">
+        <div class="team-left">
+            <!-- Image or box on the left -->
+            <img src="TeamPhotos/CantuPic.png" alt="Derek Cantu">
+            <p><span class="highlight">Derek Cantu</span> - Financial Officer / Software Engineer</p>
+        </div>
+        <div class="team-right">
+            <!-- Words on the right -->
+            <h1> The innovative vision </h1>
+            <p> This image representated our original concept design of the Hexapdo Robot having 6 leg with a total of 18 servos</p>
+        </div>
+      </section>
+
+
+      <section class="team-container4">
+        <div class="team-left">
+            <!-- Words on the left -->
+            ffffffffffffffffffffffffffffff
+
+        </div>
+        <div class="team-right">
+            <!-- Images or boxes on the right -->
+            <img src="TeamPhotos/ChapmanPic.png" alt="Dazarus Chapman">
+            <p><span class="highlight">Dazarus Chapman</span> - Project Liaison / Software Engineer </p>
+            
+        </div>
+    </section>
+
 </body>
 </html>

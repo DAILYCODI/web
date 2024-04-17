@@ -8,47 +8,80 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
           <!-- Link to external CSS file -->
-          <link rel="stylesheet" href="Nike.css">
+          <link rel="stylesheet" href="sty.css">
 
            <!-- Asynchronous script inclusion for better page loading performance -->
           <script defer src="script.js"></script>
 
           <!-- Title of the webpage -->
-          <title>Functional Navigation</title>
+          <title>Livestream</title>
         </head>
         <!-- Body of the HTML document -->
         <body>
-          <nav>
-            <ul>
-                <li class="logo">Hexapod</li>
-                <li><a style="text-decoration: none; color: inherit;" href="./LiveFeed.html">LiveFeed</a></li>
+          <header> 
+            <h1> Hexamech Solutions </h1>
+          </header>
+            <nav>
+              <ul>
+                <li><a style="text-decoration: none; color: inherit;" href="./hexapodrobot.html">Hexapod Robot</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="./index.html">Home</a></li>
                 <li><a style="text-decoration: none; color: inherit;" href="./LiDAR.html">LiDAR</a></li>
-                <li><a style="text-decoration: none; color: inherit;" href="./index.html">Learn</a></li>
-                <li><a style="text-decoration: none; color: inherit;" href="./GetInTouch.html">Get In Touch</a></li>
-            </ul>
-        </nav>
+                <li><a style="text-decoration: none; color: inherit;" href="./Learn.html">Learn</a></li>
+                <li><a style="text-decoration: none; color: inherit;" href="./GetInTouch.html">Who We Are</a></li>
+              </ul>
+            </nav>
 
           <!-- Container for the livestream iframe -->
           <div class="livestream-container">
+
+            <div class="twitch-chat"> 
             <!-- Livestream iframe with specified attributes -->
-              <div class="twitch-chat">
-            <iframe src="https://player.twitch.tv/?channel=hexamech&parent=dailycodi.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="720" width="1050"></iframe>
-              </div>
-              <div class="twitch-chat">
+            <iframe src="https://player.twitch.tv/?channel=hexamech&parent=dailycodi.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+            <h3 class="shift-h3"> 1st Person View </h3>
+            </div>
+
+            <p> On the left hand side you will see what the Hexapod is seeing in real time through our ComputerVision Camera. Which can be viewed through twitch where we are live streaming </p>
+          
+            <div class="twitch-chat">
+
             <iframe src="https://player.twitch.tv/?channel=daznow&parent=dailycodi.github.io" frameborder="0" scrolling="no" height="720" width="1050"></iframe>
-              </div>
+            <h3 class="shift-h3"> 3rd Person View </h3>
+            </div>
+
           </div>
-        
           </section>
 
-        <!-- Closing body tag -->  
-        <footer>
-            <div class = "footer" >
-            <img class="footer-image" src="./LearnPhotos/Hexamech Logo.png" alt="Hexamech Logo">
-            <img class="footer-image" src="./LearnPhotos/ECE Logo.png" alt="ECE">
-            <img class="footer-image" src="./LearnPhotos/KlesseEng Logo.png" alt="KlesseEng">   
+        <section class="feed-container">
+          <h1 class="big-header">How it works</h1>
+          <div class="box-container">
+            <div class="left-box">
+              <h3>What is Computer Vision</h3>
+              <p>Left box content goes here...</p>
             </div>
-        </footer>
+            <div class="right-boxes">
+              <div class="boxlive">
+                <h3>Box 1</h3>
+                <p>Box 1 content goes here...Box 1 content goes here...Box 1 content goes here... HERE <br class="inline"> Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...</p>
+                
+                <p> HERE I AM </p>
+              </div>
+              <div class="boxlive">
+                <h3>Box 2</h3>
+                <p>Box 2 content goes here...</p>
+                <p>Box 2 content goes here...</p>
+              </div>
+              <div class="boxlive">
+                <h3>Box 3</h3>
+                <p>Box 3 content goes here...</p>
+                <p>Box 2 content goes here...</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+          
+
+        <!-- Closing body tag -->  
         </body>
         
     <!-- Closing HTML tag -->    

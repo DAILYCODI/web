@@ -9,7 +9,7 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
           <!-- Link to external CSS file -->
-          <link rel="stylesheet" href="Nike.css">
+          <link rel="stylesheet" href="sty.css">
 
           <!-- External script for jQuery library -->
           <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -22,43 +22,60 @@
         </head>
         <!-- Body of the HTML document -->
         <body>
-            <!-- Main container for content -->
-            <div id="container"> </div>
-              <!-- Container for LiDAR readings, will be dynamically updated by JavaScript -->
-            <div class="lidar-readings" id="lidarReadings">
-                <!-- LiDAR readings will be dynamically added here using JavaScript -->
-            </div>
 
-        <!-- Closing div tag for the container -->
+      <header> 
+          <h1> Hexamech Solutions </h1>
+      </header>
       <nav>
         <ul>
-          <li class="logo">Hexapod</li>
-            <li><a style="text-decoration: none; color: inherit;" href="./LiveFeed.html">LiveFeed</a></li>
-            <li><a style="text-decoration: none; color: inherit;" href="./LiDAR.html">LiDAR</a></li>
-            <li><a style="text-decoration: none; color: inherit;" href="./index.html">Learn</a></li>
-            <li><a style="text-decoration: none; color: inherit;" href="./GetInTouch.html">Get In Touch</a></li>
-        </ul>  
+          <li><a style="text-decoration: none; color: inherit;" href="./hexapodrobot.html">Hexapod Robot</a></li>
+          <li><a style="text-decoration: none; color: inherit;" href="./LiveFeed.html">Livestream</a></li>
+          <li><a style="text-decoration: none; color: inherit;" href="./index.html">Home</a></li>
+          <li><a style="text-decoration: none; color: inherit;" href="./Learn.html">Learn</a></li>
+          <li><a style="text-decoration: none; color: inherit;" href="./GetInTouch.html">Who We Are</a></li>
+      </ul>
       </nav>    
-      <section id="lidar">
-        <h2>LiDAR</h2>
-        <p>LiDAR stands for Light Detection and Ranging. It's a remote sensing technology that uses laser light to measure distances and create 3D maps of the environment. LiDAR is used in self-driving cars, drones, and other applications that require detailed spatial information.</p>
-        <div class="livestream-container">
-          <!-- Livestream iframe with specified attributes -->
-          <!-- <iframe id="webcam" width="720" height="650" src="https://youtube.com/embed/FQOlwFe5Y1E?feature=share?autoplay=1" frameborder="0" allowfullscreen></iframe> -->
-          <iframe src="https://player.twitch.tv/?channel=HipsterJester&parent=dailycodi.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>  
-      </div>
+         <div class="lidar-container">
 
-      </section> 
+          <div class="twitch-lidar"> 
+            <!-- Livestream iframe with specified attributes -->
+            <iframe src="https://player.twitch.tv/?channel=HipsterJester&parent=dailycodi.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe> 
+            <h3 > LiDar Feed </h3>
+            </div>
           
-        <!-- Closing body tag -->
-        <footer>
-          <div class="footer-images">
-            <img class="footer-image" src="/LearnPhotos/Hexamech Logo.png" alt="Hexamech Logo">
-            <img class="footer-image" src="/LearnPhotos/ECE Logo.png" alt="ECE">
-            <img class="footer-image" src="/LearnPhotos/KlesseEng Logo.png" alt="KlesseEng">
+            <div class="embed-container">
+              <h3 > LiDAR </h3>
+              <p> hhhhhjjjjjjjjjjjjjjjjjjjuuuuuuuuuuuuuuuuuuuuHELOOOOOOOOOOOOOOOOOOOOOO box here I type  HELOOOOOOOOOOOOOOOOOOOOOO box here I type <br> HELOOOOOOOOOOOOOOOOOOOOOO box here I type  HELOOOOOOOOOOOOOOOOOOOOOO box here I type </p>
+            </div>
           </div>
-        </footer>
+          
+          <section class="feed-container">
+            <h1 class="big-header">How it works</h1>
+            <div class="box-container">
+              <div class="left-box">
+                <h3>What is LiDAR?</h3>
+                <p>Left box content goes here...</p>
+              </div>
+              <div class="right-boxes">
+                <div class="boxlive">
+                  <h3>Box 1</h3>
+                  <p>Box 1 content goes here...Box 1 content goes here...Box 1 content goes here... HERE <br class="inline"> Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...</p>
+                  
+                  <p> HERE I AM </p>
+                </div>
+                <div class="boxlive">
+                  <h3>Box 2</h3>
+                  <p>Box 2 content goes here...</p>
+                  <p>Box 2 content goes here...</p>
+                </div>
+                <div class="boxlive">
+                  <h3>Box 3</h3>
+                  <p>Box 3 content goes here...</p>
+                  <p>Box 2 content goes here...</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
         </body>
-        
-    <!-- Closing HTML tag -->
 </html>

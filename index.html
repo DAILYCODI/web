@@ -3,131 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech for Kids</title>
+    <title>Home</title>
     <link rel="stylesheet" href="sty.css">
-    <!-- Add your JavaScript file -->
-    <script defer src="script.js"></script>
-    <!-- Include Google Maps API script -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAiZTTk4f5vjjcHXFEiNcika6CHkBtjNA&callback=initMap"></script>
 </head>
 <body>
-    <header>
-        
+    <header> 
+        <h1> Hexamech Solutions </h1>
+    </header>
         <nav>
           <ul>
-            <li class="logo">Hexapod</li>
-              <li><a style="text-decoration: none; color: inherit;" href="./LiveFeed.html">LiveFeed</a></li>
+              <li><a style="text-decoration: none; color: inherit;" href="./hexapodrobot.html">Hexapod Robot</a></li>
+              <li><a style="text-decoration: none; color: inherit;" href="./LiveFeed.html">Livestreams</a></li>
               <li><a style="text-decoration: none; color: inherit;" href="./LiDAR.html">LiDAR</a></li>
-              <li><a style="text-decoration: none; color: inherit;" href="./index.html">Learn</a></li>
-              <li><a style="text-decoration: none; color: inherit;" href="./GetInTouch.html">Get In Touch</a></li>
+              <li><a style="text-decoration: none; color: inherit;" href="./Learn.html">Learn</a></li>
+              <li><a style="text-decoration: none; color: inherit;" href="./GetInTouch.html">Who We Are</a></li>
           </ul>  
         </nav>
-    </header>
-    
-    <main>
-      <h1>Tech for Kids</h1>
-        <section id="servos">
-            <h2>Servos</h2>
-            <p>Servos are small motors that can rotate to a specific position and hold it there. They are used in robotics, RC cars, and other applications where precise control of movement is needed.</p>
-            <div class="interactive-container">
-                <img src="LearnPhotos/servo.png" alt="Servo Motor" class="interactive-image">
-                <button class="interactive-button" onclick="rotateServo()">Rotate Servo</button>
-            </div>
-        </section>
-        <section id="gps">
-            <h2>GPS</h2>
-            <p>GPS stands for Global Positioning System. It's a network of satellites that can pinpoint your location on Earth. GPS is used in navigation systems, smartphones, and many other devices.</p>
-            <div id="map"></div>
-            <!-- This is where the "Pan to Current Location" button will appear -->
-            <script>
-                // Your JavaScript code goes here...
-                let map, infoWindow;
-            
-                function initMap() {
-                  map = new google.maps.Map(document.getElementById("map"), {
-                    center: { lat: -34.397, lng: 150.644 },
-                    zoom: 6,
-                  });
-                  infoWindow = new google.maps.InfoWindow();
-            
-                  const locationButton = document.createElement("button");
-            
-                  locationButton.textContent = "Pan to Current Location";
-                  locationButton.classList.add("custom-map-control-button");
-                  map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
-                  locationButton.addEventListener("click", () => {
-                    // Try HTML5 geolocation.
-                    if (navigator.geolocation) {
-                      navigator.geolocation.getCurrentPosition(
-                        (position) => {
-                          const pos = {
-                            lat: position.coords.latitude,
-                            lng: position.coords.longitude,
-                          };
-            
-                          infoWindow.setPosition(pos);
-                          infoWindow.setContent("Latitude: " + pos.lat + ", Longitude: " + pos.lng);
-                          infoWindow.open(map);
-                          map.setCenter(pos);
-                        },
-                        () => {
-                          handleLocationError(true, infoWindow, map.getCenter());
-                        },
-                      );
-                    } else {
-                      // Browser doesn't support Geolocation
-                      handleLocationError(false, infoWindow, map.getCenter());
-                    }
-                  });
-                }
-            
-                function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-                  infoWindow.setPosition(pos);
-                  infoWindow.setContent(
-                    browserHasGeolocation
-                      ? "Error: The Geolocation service failed."
-                      : "Error: Your browser doesn't support geolocation."
-                  );
-                  infoWindow.open(map);
-                }
-              </script>
-        </section>
-        
-        <section id="lidar">
-            <h2>LiDAR</h2>
-            <p>LiDAR stands for Light Detection and Ranging. It's a remote sensing technology that uses laser light to measure distances and create 3D maps of the environment. LiDAR is used in self-driving cars, drones, and other applications that require detailed spatial information.</p>
-            <div class="interactive-container">
-                <canvas id="lidar-canvas"></canvas>
-            </div>
-        </section>
 
-        <section id="hexapod">
-          <h2>Hexapod</h2>
-          <p>A hexapod is a type of robot that has six legs, similar to insects. They are often used in robotics research and for educational purposes.</p>
-          <div class="interactive-container">
-              <img src="LearnPhotos/hexapod.jpg" alt="Hexapod Robot" class="interactive-image">
-              <!-- Add any interactive elements here if needed -->
-          </div>
-      </section>
-
-      <section id="computer-vision">
-        <h2>Computer Vision</h2>
-        <p>Computer vision is a field of artificial intelligence that enables computers to interpret and understand visual information from the real world. It is used in various applications such as image recognition, object detection, and facial recognition.</p>
-        <div class="interactive-container">
-            <!-- Add any interactive elements related to computer vision here if needed -->
-            <img src="LearnPhotos/computer-vision.png" alt="Computer Vision" class="interactive-image">
+        <div class="main-section">
+            <video autoplay muted loop id="bg-video">
+                <source src="./LearnPhotos/stock.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="text-container">
+                <div class="motto">
+                    <h2>Building for a<br> better tomorrow</h2>
+                </div>
+            </div>
         </div>
-    </section>
+
+        <div class="rightabove">
+            <p> How it started. </p>
+        </div>
+        <div class="section2">
+            <div class="box">  <h3> 01 Hexapod Design </h3> 
+                <p> hexapod design started by  </p> 
+                <ul><a style="text-decoration: none; color: blue;" href="./hexapodrobot.html">More info</a></ul>
+            </div>
+
+            <div class="box">  <h3> 02 Computer Vision </h3>
+                <p> The next step was to develop computer vision algorithms that could be used on our hexapods. This involved </p>
+                
+                <ul><a style="text-decoration: none; color: blue;" href="./LiveFeed.html">More info</a></ul>
+            </div>
+
+            <div class="box">  <h3> 03 LiDAR </h3>
+
+                <p> The use of Light Detection and Ranging (LiDAR) technology in our designs is to provide accurate measurements of distances from an object </p>
+                <ul><a style="text-decoration: none; color: blue;" href="./LiDAR.html">More info</a></ul>
+            </div>
+
+            <div class="box">  <h3> 04 Learn </h3>
+                
+              <p> Learn  how to use our software and hardware with our step-by-step tutorials, resources, and more
+                The final step in our journey is to </p>
+
+                <ul><a style="text-decoration: none; color: blue;" href="./learn.html">More info</a></ul>
+            </div>
+        </div>
+
     
-    </main>
-
-    <footer>
-          <div class="footer-images">
-            <img class="footer-image" src="./LearnPhotos/Hexamech Logo.png" alt="Hexamech Logo">
-            <img class="footer-image" src="./LearnPhotos/ECE Logo.png" alt="ECE">
-            <img class="footer-image" src="./LearnPhotos/KlesseEng Logo.png" alt="KlesseEng">
-          </div>
-    </footer>
-
 </body>
 </html>
