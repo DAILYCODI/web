@@ -139,13 +139,11 @@ nav ul li a:hover {
     .left-box {
     height: 200px;
     }
-}
-.left-box img {
+    .left-box img {
     width: 100%;
     height: auto
-
   }
-
+}
 
 .footer-image {
     position: fixed;
