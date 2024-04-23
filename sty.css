@@ -5,6 +5,7 @@ body {
     margin-bottom: 100px;
     background-color: #ffffff;
   }
+
   header {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2em; /* Adjust the font size as needed */
@@ -113,10 +114,23 @@ nav ul li a:hover {
     font-size: xx-large;
     font-family: Arial, Helvetica, sans-serif;
   }
-  .section2 {
+  .index-con {
     display: flex;
-    justify-content: space-around; /* Space out boxes */
+    justify-content: space-around; /* Space out sections */
     margin-top: 20px; /* Adjust spacing */
+    margin-left: 20px;
+  }
+  .section2, .section3, .section4, .section5 {
+    flex: 1;
+    display: contents;
+    
+  }
+  .section2::after,
+  .section3::after,
+  .section4::after {
+    content: "";
+    border-right: 1px solid black; /* Adjust border properties as needed */
+    margin-right: 20px; /* Adjust the space between sections */
   }
 
   .hxsection1,
@@ -134,13 +148,14 @@ nav ul li a:hover {
     text-align: center; /* Center align text */
     border: 2px solid black; /* Add black border */
     width: 20% ;/* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
+    height: fit-content; /* Adjust height as needed */
+    background-color: #f9f9f9; /* Set a light grey background color */
 
   }
   
-  .feed-container {
-    
-    text-align: right;
+  .left-box p {
+    text-align:  left; /* Align paragraphs to the left */
+    text-indent: 1em;
   }
   
   .big-header {
@@ -149,6 +164,7 @@ nav ul li a:hover {
     padding: 100px 100px 50px 0px;
     width: 47%; /* Adjust width to match the width of the right boxes */
     margin: 0 auto; /* Center the element horizontally */
+    text-align: right;
   }
   
   .box-container {
@@ -156,6 +172,7 @@ nav ul li a:hover {
     justify-content: space-between;
     padding-left: 125px;
     padding-right: 50px; 
+    position: relative;
   }
   
   .right-boxes {
@@ -163,12 +180,36 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* Align boxes to the top */
+    position: relative ;
+  }
+  .box-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 125px; /* Adjust as needed */
+    right:  -30px; /* Make sure it doesn't go off screen on the right side. Negative value for some spacing. */
+    width: 90%; /* Adjust as needed */
+    height: 110%; /* Adjust as needed */
+    background-color: #588fc2; /* Set a light grey background color */
+    transform: skewX(-20deg); /* Adjust skew angle as needed */
+    z-index: -1; /* Ensure it's behind the boxes */
+    padding-right: -100px;
   }
   
   .boxlive {
     width: calc(30% - 20px); /* Adjust as needed */
+    height: fit-content; /* Allow box to shrink/grow based on content */
+    background-color: #f9f9f9; /* Set a light grey background color */
+    margin-top: 80px; /* Create some space above each box */
     padding: 20px;
     border: 1px solid #000;
+  }
+  .boxlive p {
+    padding-bottom: 30px;
+    text-align: left ;
+    text-indent: 1em;
+    margin-bottom: 5px;
+    text-align: left;
   }
   .boxlive p:not(:last-child) {
     border-bottom: 1px solid black; /* Adjust the border properties as needed */
@@ -179,17 +220,10 @@ nav ul li a:hover {
     margin-bottom: 5px;
     text-align: center;
   }
-  
-  .boxlive p {
-    margin-bottom: 5px;
-    text-align: center;
-    
-    
-  }
 
   .shift-h3 {
-    padding: 0px 230px;
-    justify-content: center;
+    padding: 0px 0px;
+    text-align: center;
   }
 
   /* Style for the left and right divisions */
@@ -206,12 +240,23 @@ nav ul li a:hover {
     text-align: center; /* Center align text */
     
 }
+.left p {
+  text-align:  left !important;
+  text-indent:  1em;
+  font-size: 22px;
+  justify-self: center;
+}
 
 /* Style for the right division */
 .right {
     display:  inline-block; /* Make it behave like an inline element */
     justify-content: space-around; /* Space out images or boxes */
     align-items: center; /* Center content vertically */
+}
+.right p {
+  font-size: 25px;
+  text-indent: 3em;
+
 }
 .left img {
   height: auto; /* Set image height as a percentage of its container width */
@@ -228,17 +273,24 @@ nav ul li a:hover {
     margin: 10px; /* Add space between images */
     border: 2px solid black; /* Add black border */
     padding: 20px; /* Add padding for better readability */
+    height: fit-content; /* Adjust height as needed */
 }
   /* Style for the boxes */
   .box{
-    width:400px; /* Adjust box width */
-    height: 200px; /* Adjust box height */
-    display: flex;
-    flex-direction: column; /* Arrange content vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    padding: 90px; /* Add padding for better readability */
-    border-right: 2px solid #1819196f; /* Add a border to separate words */
+    padding: 0px;
+  }
+
+  .box h3 {
+    display:  flex; /* Display heading as separate block to add bottom margin */
+    font-size:  28pt;
+    margin-left: 20px;
+  }
+  
+  .box p {
+    font-size: 1.5em; 
+    display:  -webkit-flex; /* Enable Flexbox support for older browsers */
+    justify-content:  center; /* Center text in box */
+    text-indent: 1em;
   }
   /* Remove border from the last .box element */
   .box:last-child {
@@ -251,6 +303,15 @@ nav ul li a:hover {
     padding: 10px;
     border-bottom: solid #1819196f;
   }
+  .livestream-container p {
+    justify-content: center;
+    display: block;
+    font-size:  20px;
+    width: 1000px;
+    height: 300px;
+    
+  }
+
   .lidar-container {
     display: flex;
     justify-content: space-between;
@@ -258,25 +319,24 @@ nav ul li a:hover {
     border-bottom: solid #1819196f;
   }
 
-
-  .twitch-chat {
+ .twitch-chat {
     width: calc(70% - 10px); /* Half the width of the container minus padding */
   }
   .twitch-lidar {
-    width: calc(45% - 10px); /* Half the width of the container minus padding */
+    width: calc(80% - 10px); /* Half the width of the container minus padding */
     text-align: center;
   }
   .twitch-lidar iframe {
     border: none;
     height: 378px;
     width: 100%;
-}
-.embed-container h3{
+  }
+  .embed-container h3{
 
-  padding-right: 50px;
-  text-align: center;
+    padding-right: 50px;
+    text-align: center;
 
-}
+  }
   .embed-container {
 
     padding-right: 50px;
@@ -317,13 +377,14 @@ nav ul li a:hover {
   }
   .story-image {
     position: relative; /* Set image-container to relative positioning */
-    width: 100%; /* Ensure the image container takes up the full width */
-    height: 80vh;
+    overflow: hidden;
+    
   }
   .story-image img {
     width: 100%; /* Ensure the image takes up the full width of its container */
-    height: 100%;
+    height: auto;
     display: block; /* Ensure the image is a block-level element */
+    object-fit: cover; /* This prevents stretching but may crop the image */
   }
   .Story {
     position: absolute; /* Set text-container to absolute positioning */
@@ -361,17 +422,31 @@ nav ul li a:hover {
     border-bottom: #1819196f inset; /* Add a light separator line below*/
     border-top: #1819196f outset;
     border-radius: 50px;
-    
-
+    background-color: #b0d2ec;
   }
-  .team-left {
+
+  .team-left-text h1 {
     padding: 20px; /* Add padding for better readability */
-    text-align: center; /* Center align text */
+    text-align: right; /* Center align text */
+    max-width: fit-content; /* Allow text to shrink/grow as needed */
     
   }
-
+  .team-left-text p {
+    padding: 20px; /* Add padding for better readability */
+    text-align: left; /* Center align text */
+    width: 95%;
+    max-width: fit-content; /* Allow text to shrink/grow as needed */
+    text-indent: ;
+    
+  }
   /* Style for the right division */
   .team-right {
+    padding: 10px;
+    margin-right:  200px; /* Add some right
+    justify-content: space-around; /* Space out images or boxes */
+    align-items: center; /* Center content vertically */
+  }
+  .team-right-text {
     padding: 20px;
     justify-content: space-around; /* Space out images or boxes */
     align-items: center; /* Center content vertically */
@@ -388,6 +463,7 @@ nav ul li a:hover {
     padding: 20px; /* Add padding for better readability */
 
 }
+
 
   .rotate { /* Rotate animation of servo*/
     animation: rotate 1s linear;

@@ -39,8 +39,22 @@
             <iframe src="https://player.twitch.tv/?channel=hexamech&parent=dailycodi.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
             <h3 class="shift-h3"> 1st Person View </h3>
             </div>
-
-            <p> On the left hand side you will see what the Hexapod is seeing in real time through our ComputerVision Camera. Which can be viewed through twitch where we are live streaming </p>
+        
+            <p>
+              &#9664;On the left-hand side, you will see our 1st person point of view of our hexapod robot.
+               It has an AI trained model to detect humans using YOLO algorithms. 
+               
+              <br>
+              <br>
+              <br>
+              On the right-hand side you will see a 3rd person point of view of the hexapods environment
+              around the are you will see a couple obstacles it, and it is up to you to maneuver around them or command the robot to do emotes!
+              &#9654;
+              <br>
+              <br>
+              <br>
+              <a style="text-decoration: none; color: blue;" href="./LiDAR.html">Click on me to go to our Hexapod Livestream to interact with it.</a>
+            </p>
           
             <div class="twitch-chat">
 
@@ -49,35 +63,41 @@
             </div>
 
           </div>
-          </section>
 
-        <section class="feed-container">
+        <section class="bottom-feed">
           <h1 class="big-header">How it works</h1>
+
           <div class="box-container">
+            
             <div class="left-box">
-              <h3>What is Computer Vision</h3>
-              <p>Left box content goes here...</p>
+              <h3>What is Computer Vision?</h3>
+              <p>Computer vision is a branch of AI that enables machines to interpret and analyze visual information from images or videos, allowing them to identify objects, recognize patterns, and extract valuable insights.</p>
+              <img src="LearnPhotos/computer-vision.png" alt="Computer Vision" class="interactive-image">
             </div>
+        
             <div class="right-boxes">
               <div class="boxlive">
-                <h3>Box 1</h3>
-                <p>Box 1 content goes here...Box 1 content goes here...Box 1 content goes here... HERE <br class="inline"> Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...Box 1 content goes here...</p>
+                <h3>Step 1</h3>
+                <p> The first step involves clearly defining the specific tasks or goals you want to achieve with computer vision. This could range from image classification and object detection to facial recognition. Understanding your objectives guides the rest of the stages.</p>
                 
-                <p> HERE I AM </p>
+                <p> Our primary objective was human recognition. We aimed to develop a system capable of accurately identifying and localizing humans within images or video streams. This objective guided our selection of methodologies and tools tailored to human detection and recognition tasks. </p>
               </div>
               <div class="boxlive">
-                <h3>Box 2</h3>
-                <p>Box 2 content goes here...</p>
-                <p>Box 2 content goes here...</p>
+                <h3>Step 2</h3>
+                <p>The next step is to select an appropriate computer vision model and train it using relevant data. This involves feeding the model with preprocessed visual data to learn from the examples provided. The training process adjusts the model's internal parameters, enabling it to recognize patterns and make accurate predictions based on the training data.</p>
+                <p>We chose the YOLO (You Only Look Once) model, known for its efficiency and effectiveness in object detection tasks. We curated a dataset comprising over 1000 images containing various human poses, backgrounds, and lighting conditions. This dataset was used to train the YOLO model, enabling it to learn and recognize human features and patterns.</p>
               </div>
               <div class="boxlive">
-                <h3>Box 3</h3>
-                <p>Box 3 content goes here...</p>
-                <p>Box 2 content goes here...</p>
+                <h3>Step 3</h3>
+                <p>It’s crucial to evaluate the model's performance by testing it on unseen or validation data. This step helps assess the model's accuracy, identify potential issues or areas for improvement, and validate its ability to generalize well to new, unseen data. </p>
+                <p>After training the YOLO model, we conducted tests to evaluate its performance at different confidence levels. By adjusting the confidence threshold, we assessed the model's accuracy and precision in human recognition. Through iterative testing, we determined that a confidence threshold of 0.5 yielded the best results, striking a balance between detection accuracy and false positives/negatives, ensuring reliable human recognition in diverse scenarios.</p>
               </div>
+
+          </div>
+            
             </div>
           </div>
-        </section>
+        
         
           
 
