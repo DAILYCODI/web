@@ -2,76 +2,84 @@
 body {
     margin: 0;
     padding: 0px 0px 0px 0px;
-    margin-bottom: 100px;
     background-color: #ffffff;
   }
 
+  .aboutus_page {
+    background-color: #6086a3;
+  }
   header {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 2em; /* Adjust the font size as needed */
     line-height: .5; /* Adjust the line height for better readability */
     letter-spacing: 2px; /* Adjust the letter spacing for better readability */
     text-align: center; /* Center align the text */
-    color: #6ebad6;
+    color:#2a3743;
+    min-height: 75px;
     
 }
   
-  nav {
-    background-color: #fff;
-    color: #111;
-    padding: 15px 110px 15px 120px;
-    display: flex; /* Added */
-    justify-content: center; /* Added */
-    align-items: center; /* Added */
-    border-top: #1819196f solid 2px; /* Add a thin top border to the navigation bar */
-    border-bottom: 2px solid #1819196f; /* Add a border line under the h1 */
+nav {
+  background-color: #fff;
+  color: #111;
+  padding: 15px 110px 15px 120px;
+  display: block; /* Added */
+  justify-content: center; /* Added */
+  align-items: center; /* Added */
+  border-top: #1819196f solid 2px; /* Add a thin top border to the navigation bar */
+  border-bottom: 2px solid #1819196f; /* Add a border line under the h1 */
+  max-width: 100%;
+  margin-inline: auto;
+  flex-wrap: wrap;
 }
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-between; /* Changed */
-    align-items: center; /* Added */
-    width: 100%; /* Added */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap:  3rem;
+  justify-content: space-between; /* Changed */
+  align-items: center; /* Added */
+  max-width: 100%; /* Added */
 }
 nav ul li {
-  margin-right: 20px;
-  position: relative; /* Added */
-  display: inline-block;
-  position: relative;
+margin-right: 20px;
+position: relative; /* Added */
+display: inline-block;
+position: relative;
 }
 nav ul li:not(:last-child) {
-  border-right: 2px solid #1819196f; /* Add a border to separate words */
-  padding-right: 200px; /* Add some spacing between words */
+border-right: 2px solid #1819196f; /* Add a border to separate words */
+padding-right: 200px; /* Add some spacing between words */
 }
 nav ul li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
 nav ul li a:hover {
-    color: #ff8c00;
+  color: #ff8c00;
 }
-  .logo {
+
+.logo {
     font-size: 24px;
     font-weight: bold;
-    }
+}
 
+.img {
+
+  display: block;
+  max-width: 100%; /* auto works well too */
+}
 /* Style for the main section */
 .main-section {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh; /* Adjust height as needed */
+  min-height: 600px;
   overflow: hidden; /* Hide overflowing video */
 }
-.story-section {
-  position: relative;
-}
-
 /* Style for the video */
 #bg-video {
   position: absolute;
@@ -116,6 +124,11 @@ nav ul li a:hover {
   }
   .index-con {
     display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    grid-template-rows: 
+      repeat(auto-fit, minimax(250px, 1fr));
+
     justify-content: space-around; /* Space out sections */
     margin-top: 20px; /* Adjust spacing */
     margin-left: 20px;
@@ -276,7 +289,7 @@ nav ul li a:hover {
     height: fit-content; /* Adjust height as needed */
 }
   /* Style for the boxes */
-  .box{
+  .box {
     padding: 0px;
   }
 
@@ -323,13 +336,13 @@ nav ul li a:hover {
     width: calc(70% - 10px); /* Half the width of the container minus padding */
   }
   .twitch-lidar {
-    width: calc(80% - 10px); /* Half the width of the container minus padding */
+    max-width: calc(80% - 10px); /* Half the width of the container minus padding */
     text-align: center;
   }
   .twitch-lidar iframe {
     border: none;
-    height: 378px;
-    width: 100%;
+    min-height: 378px;
+    max-width: auto;
   }
   .embed-container h3{
 
@@ -375,22 +388,21 @@ nav ul li a:hover {
   .fade-header {
     animation: fadeInOut 5s infinite; /* Apply the animation */
   }
-  .story-image {
-    position: relative; /* Set image-container to relative positioning */
-    overflow: hidden;
-    
-  }
+  .story-section {
+    max-width: 960px;
+    margin-inline: auto;
+    background-color: #6086a3;
+  }  
   .story-image img {
-    width: 100%; /* Ensure the image takes up the full width of its container */
-    height: auto;
-    display: block; /* Ensure the image is a block-level element */
+    max-inline-size: 100%; /* Ensure the image takes up the full width of its container */
+    min-height: auto; 
     object-fit: cover; /* This prevents stretching but may crop the image */
   }
   .Story {
-    position: absolute; /* Set text-container to absolute positioning */
+    /* position: absolute;  Set text-container to absolute positioning */
     bottom: 0; /* Position the text container at the bottom of its parent */
     left: 0; /* Align the text container to the left */
-    width: 100%; /* Ensure the text container takes up the full width */
+    max-width: 100%; /* Ensure the text container takes up the full width */
     text-align: center; /* Center-align the text */
   }
 
@@ -402,12 +414,16 @@ nav ul li a:hover {
     padding-bottom: 10px;
   }
 
+  .ourstory h2 {
+    font-size: 2em;
+  }
   .ourstory p {
     color:#ccc;
     background-color: #6086a3;
     padding-bottom: 10px;
     padding-right: 300px;
     padding-left: 300px;
+    font-size: 1.5em;
     text-align: center;
     align-content: center;
   }
@@ -424,33 +440,39 @@ nav ul li a:hover {
     border-radius: 50px;
     background-color: #b0d2ec;
   }
+  .team-left {
+    margin-left: 100px;
+  }
 
   .team-left-text h1 {
-    padding: 20px; /* Add padding for better readability */
+    padding-left: 100px;
     text-align: right; /* Center align text */
-    max-width: fit-content; /* Allow text to shrink/grow as needed */
-    
+    max-width: fit-content; /* Allow text to shrink/grow as needed */  
+  }
+  .team-right-text h1 {
+    padding-right: 50px;
   }
   .team-left-text p {
-    padding: 20px; /* Add padding for better readability */
+    padding: 0px 20px; /* Add padding for better readability */
+    padding-left: 55px;
     text-align: left; /* Center align text */
     width: 95%;
     max-width: fit-content; /* Allow text to shrink/grow as needed */
-    text-indent: ;
     
   }
   /* Style for the right division */
   .team-right {
     padding: 10px;
-    margin-right:  200px; /* Add some right
+    margin-right:  100px; /* Add some right
     justify-content: space-around; /* Space out images or boxes */
     align-items: center; /* Center content vertically */
   }
   .team-right-text {
-    padding: 20px;
+    padding: 55px;
     justify-content: space-around; /* Space out images or boxes */
     align-items: center; /* Center content vertically */
   }
+
   .team-left img {
     height: auto; /* Set image height as a percentage of its container width */
     width: 250px;
@@ -461,9 +483,7 @@ nav ul li a:hover {
     height: auto; /* Set image height as a percentage of its container width */
     width: 250px;
     padding: 20px; /* Add padding for better readability */
-
-}
-
+  }
 
   .rotate { /* Rotate animation of servo*/
     animation: rotate 1s linear;
